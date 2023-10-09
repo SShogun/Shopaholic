@@ -1,0 +1,121 @@
+@media only screen and (max-width: 1496px) {
+    .main-content-left .div-5 {
+        height: 2rem;
+    }
+    .main-content-left .div-5 p {
+        font-size: .7rem;
+        overflow: hidden;
+    }
+    .main-content-left .div-4 button {
+        height: 3rem;
+    }
+
+    .free-trial-marquee {
+        margin-top: 5rem;
+    }
+    .footer-top {
+        height: 105vh;
+    }
+    .main-content-left .div-1 {
+        scale: .7;
+        top: 3rem;
+        left: -5rem;
+    }
+}
+
+@media only screen and (max-width: 1405px) {
+    .main-content-left .div-2 p {
+        font-size: 6rem;
+    }
+    .main-content-left .div-3 p {
+        font-size: 1.2rem;
+    }
+    .main-content-left .div-3 {
+        height: 9%;
+    }
+    .main-content-left .div-4 button {
+        display: flex;
+        font-size: .8rem;
+        padding-top: 5px;
+        width: 30%;
+    }
+    .sales-img {
+        scale: 1;
+    }
+    .info-right-top {
+        font-size: 2.5rem;
+    }
+    /* .main-content-right {
+        padding-right: 1rem;
+    } */
+}
+@media only screen and (max-width: 1350px) {
+    .main-content-left {
+        width: 40%;
+    }
+    .main-content-right {
+        width: 60%;
+    }
+    /* .marquee-col {
+        width: ;
+    } */
+    .footer-top {
+        margin-bottom: 1rem;
+    }
+    #trialBtn {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1340px) {
+    .main-content-left .div-2 p {
+        font-size: 4.2rem;
+    }
+}
+@media only screen and (max-width: 1240px) {
+    .footer-box {
+        scale: .9;
+    }
+}
+@media only screen and (max-width: 1240px) {
+    .sales-img {
+        scale: .9;
+    }
+    .support-box {
+        width: 30rem;
+    }
+    .header-container {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1235px) {
+    .main-content-left .div-2 p {
+        font-size: 4rem;
+    }
+    .info-left img {
+        scale: .85;
+    }
+    .info-left {
+        width: 45vw;
+    }
+    .info-right {
+        width: 55vw;
+    }
+}
+@media only screen and (max-width: 1205px) {
+    .sales-img {
+        scale: .85;
+    }
+}
+@media only screen and (max-width: 1185px) { 
+    .main-content-left .div-4 button {
+        position: relative;
+        right: 0;
+        font-size: .7rem;
+        width: 8rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    
+}

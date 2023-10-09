@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopaholic - Start your own business with less hassle!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <!-- contains navigation bar + login & signup options -->
+        <div class="header-container" id="header">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+
+            <!-- dropdowns -->
+            <div class="navbar-dropdowns">
+                <button id="btn1">Solutions</button>
+                <div id="btn1-drop">
+                    <div class="box-1">
+                        <img src="" alt="">
+                        <ul>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                    <button>Pricing</button>
+                
+                <button id="btn2">Resources</button>
+                <div id="btn2-drop">
+
+                </div>
+            </div>
+
+            <div class="navbar-right">
+                <input type="text" id="searchbox" placeholder="Search....">
+                <button id="btnSearch"><i class="fa-solid fa-search"></i></button>
+                <button id="btnLogin">Login</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- main body of the page, with main information and marquee images -->
+        <div class="main-container main-gradient">
+            <div class="main-content-left">
+                <div class="div-1" id="shopaholicStory">
+                    <button id="frameToggle"><i class="fa-solid fa-circle-play"></i><a target="_blank" href="https://www.youtube.com/watch?v=rgZU5pDf6mw">Watch shopaholic's story</a></button>
+                </div>
+                <div class="div-2">
+                    <p>Retail Revolution Redefined</p>
+                </div>
+                <div class="div-3">
+                    <p>Empower your business, selling effortlessly online and offline, with us</p>
+                </div>
+                <div class="div-4">
+                    <input type="email" name="email" id="emailBox" placeholder="Enter you email adress">
+                    <button id="trialBtn">Start free trial</button>
+                </div>
+                <div class="div-5">
+                    <p>Try Shopaholic free for 5 days, no credit card reqired. By entering your email, you agree to receive marketing and notifications from Shopaholic</p>
+                </div>
+            </div>
+            <div class="main-content-right">
+                <marquee class="marquee-col col-1" id="marquee" onMouseOver="this.stop()" onMouseOut="this.start()" direction="up" height="100%" loop="infinite" scrollamount="4">
+                    <div class="card-1 cards"></div>
+                    
+                    <div class="card-notification notif-1">
+                        <img src="img/notif-1.jpg" alt="">
+                        <h1 id="notifMain">Watches</h1>
+                        <p id="notifSub">Only <span id="count"></span> left in stock</p>
+
+                        <!-- script for increasing counter -->
+                        <script>
+                            var count = 97;
+                            var interval = setInterval(function () {
+                                count--;
+                                document.getElementById("count").innerHTML = count;
+                            }, 5000);
+                        </script>
+                    </div>
+                    <div class="card-2 cards"></div>
+                    <div class="card-3 cards"></div>
+                    <div class="card-4 cards"></div>
+                </marquee>
+                <marquee class="marquee-col col-1" id="marquee" onMouseOver="this.stop()" onMouseOut="this.start()" direction="up" height="100%" loop="infinite" scrollamount="3.6">
+                    
+                    <div class="card-notification notif-1">
+                        <img src="img/notif-2.jpg" alt="">
+                        <h1 id="notifMain">Plants</h1>
+                        <p id="notifSub">Only <span id="count-2"></span> left in stock</p>
+
+                        <!-- script for increasing counter -->
+                        <script>
+                            var count = 250;
+                            var interval = setInterval(function () {
+                                count--;
+                                document.getElementById("count-2").innerHTML = count;
+                            }, 2800);
+                        </script>
+                    </div>
+                    <div class="card-7 cards"></div>
+                    <div class="card-8 cards"></div>
+                    <div class="card-notification notif-1">
+                        <img src="img/notif-3.jpg" alt="">
+                        <h1 id="notifMain">Chairs</h1>
+                        <p id="notifSub">Only <span id="count"></span> left in stock</p>
+
+                        <!-- script for increasing counter -->
+                        <script>
+                            var count = 100;
+                            var interval = setInterval(function () {
+                                count--;
+                                document.getElementById("count").innerHTML = count;
+                            }, 4000);
+                        </script>
+                    </div>
+                    <div class="card-10 cards"></div>
+                    <div class="card-11 cards"></div>
+                </marquee>
+            </div>
+        </div>
+
+
+        <!-- information page -->
+        <div class="information">
+            <div class="info-left">
+                <img src="img/globe.png" alt="">
+            </div>
+            <div class="info-right">
+                <div class="info-right-top">
+                    <p>Discover why millions of Business Owners and Enterpreneurs choose Shopaholic - </p>
+                </div>
+                <div class="info-right-bottom">
+                    <div class="bot-box-1 bottom-box">
+                        <p id="bottom-box-main-text" class="center-bottom">Millions</p>
+                        <p id="bottom-box-sub-text">of Vendors online</p>
+                    </div>
+                    <div class="bot-box-2 bottom-box">
+                        <p id="bottom-box-main-text" class="center-bottom">100+</p>
+                        <p id="bottom-box-sub-text">Countries connected</p>
+                    </div>
+                    <div class="bot-box-3 bottom-box">
+                        <p id="bottom-box-main-text" class="center-bottom">7.5% of Global ecommerce</p>
+                        <p id="bottom-box-sub-text">of Vendors online</p>
+                    </div>
+                    <div class="bot-box-4 bottom-box">
+                        <p id="bottom-box-main-text" class="center-bottom">>$220B+</p>
+                        <p id="bottom-box-sub-text">worth transactions fullfilled</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- sales page -->
+        <div class="sales-section">
+            <div class="sales-section-top">
+                <div class="sales-section-top-left">
+                    <p>Sales Channel</p>
+                    <h1>Sell to any buyer,<br>anywhere</h1>
+                </div>
+                <div class="sales-section-top-right">
+                    <p>Sell online, in person, and around the world with the marketing tools, social integrations, and sales channels you need to get your products in front of customers.</p>
+                    <button><a href="#">Start Selling <i class="fa-solid fa-arrow-right"></i></a></button>
+                </div>
+            </div>
+            <div class="sales-section-bottom">
+                <img src="img/sales-1.webp" alt="" class="sales-img">
+                <img src="img/sales-2.webp" alt="" class="sales-img">
+                <img src="img/sales-3.webp" alt="" class="sales-img">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="free-trial-marquee">
+            <marquee behavior="scroll" direction="right">
+                Start a free trial ---- Start a free trial ---- Start a free trial ---- Start a free trial 
+            </marquee>
+        </div>
+        <!-- <br> -->
+        <!-- shopaholic support -->
+        <div class="support">
+            <div class="support-top">
+                <p>SHOPIFY SUPPORT</p>
+                <h1>The help you need,<br>when you need it</h1>
+            </div>
+            <div class="support-bottom">
+                <div class="support-box-1 support-box">
+                    <i class="fa-solid fa-computer"></i>
+                    <h1>Blog</h1>
+                    <p>Get all the marketing and business strategy tips that you need to run your online business</p>
+                    <button class="supportBtn">Read ></button>
+                </div>
+                <div class="support-box-2 support-box">
+                    <i class="fa-solid fa-book"></i>
+                    <h1>Online Course</h1>
+                    <p>Learn tried-and-tested business tips  with instant access to lessons from other successful enterpreneurs</p>
+                    <button class="supportBtn">Learn ></button>
+                </div>
+                <div class="support-box-3 support-box">
+                    <i class="fa-solid fa-people-group"></i>
+                    <h1>Community</h1>
+                    <p>Connect to a community of brands, partners, and fellow merchants who understand Shopaholic.</p>
+                    <button class="supportBtn">Discuss ></button>
+                </div>
+                <div class="support-box-4 support-box">
+                    <i class="fa-solid fa-question"></i>
+                    <h1>Help Center</h1>
+                    <p>Find answers with dedicated helpdesk resource full of articles and videos from our Support team.</p>
+                    <button class="supportBtn">Get Help ></button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- begin trial area -->
+        <div class="begin-trial">
+            <!-- logo, message & button -->
+            <div class="begin-logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="begin-message">
+                <h1>Whether you want to sell products down the street or around the world, we have all the tools you need.</h1>
+            </div>
+            <div class="begin-button">
+                <button type="button">Begin 3 month free trial</button>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="footer-top-right">
+                    <div class="footer-box-1 footer-box">
+                        <h1>Spotify</h1>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Investors</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Service Status</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-box-2 footer-box">
+                        <h1>Support</h1>
+                        <ul>
+                            <li><a href="#">Merchant Support</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Hire an Expert</a></li>
+                            <li><a href="#">Shopaholic Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-box-3 footer-box">
+                        <h1>Developers</h1>
+                        <ul>
+                            <li><a href="#">Dev Network</a></li>
+                            <li><a href="#">API Documentation</a></li>
+                            <li><a href="#">Dev Degree</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-box-4 footer-box">
+                        <h1>Products</h1>
+                        <ul>
+                            <li><a href="#">Shopaholic+</a></li>
+                            <li><a href="#">Linkpop</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-box-5 footer-box">
+                        <h1>Global Impact</h1>
+                        <ul>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Social Impact</a></li>
+                            <li><a href="#">Build Black</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-box-6 footer-box">
+                        <h1>Solutions</h1>
+                        <ul>
+                            <li><a href="#">Online store builder</a></li>
+                            <li><a href="#">Website builder</a></li>
+                            <li><a href="#">Ecommerce Website</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hr">
+                <hr width="80%" size="2" color="#c2c2c2" margin="25px">
+
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <ul>
+                        <li><a href="#">India</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom-right">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var navbar = document.getElementById('header');
+            var scroll = this.scrollY;
+            // console.log(scroll)
+            if(scroll > 714) {
+                navbar.style.background = "white";
+            }else {
+                    navbar.style.background = "linear-gradient(to bottom, white, rgba(255, 255, 255, 0.5), transparent)";
+                }
+            })        
+    </script>
+    <!-- Main Javascript -->
+    <script>
+        // search btn
+        let searchBtn = document.getElementById('btnSearch')
+        let searchBox = document.getElementById('searchbox')
+
+
+        searchBtn.addEventListener('click' , function(event){
+            if(event.target == searchBtn){
+                searchBox.style.display = 'block'
+                event.stopPropagation();
+            }
+        });
+        document.addEventListener('click', function() {
+            searchBox.style.display = 'none';
+        });
+        searchBox.addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+
+        //shopaholic iframe button
+        let toggleFrame = document.getElementById('frameToggle');
+        let VidFrame = document.getElementById('frameVid');
+
+        toggleFrame.addEventListener('click' , function(event) {
+            if(event.target == toggleFrame) {
+                VidFrame.style.display = 'block'
+                event.stopPropagation();
+            }
+        });
+
+    </script>
+    <!-- sub script -->
+    <script>
+        let trialBtn = document.getElementById('trialBtn')
+
+
+        // login btn javascript
+        
+    </script>
+</body>
+</html>
